@@ -1,0 +1,136 @@
+Started GET "/products/dress" for 127.0.0.1 at 2023-04-10 20:52:13 +0530
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "url"=>"dress"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 479)
+
+
+  
+NameError (undefined local variable or method `name' for #<ProductsController:0x000000001b01c0>):
+  
+app/controllers/products_controller.rb:18:in `show'
+Started GET "/products/dress" for 127.0.0.1 at 2023-04-10 20:52:42 +0530
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"dress"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 490)
+
+
+  
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  
+app/controllers/products_controller.rb:17:in `show'
+Started GET "/products/dress" for 127.0.0.1 at 2023-04-10 20:54:23 +0530
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"dress"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 480)
+
+
+  
+NameError (undefined local variable or method `name' for #<ProductsController:0x000000001b9c48>):
+  
+app/controllers/products_controller.rb:18:in `show'
+Started GET "/products/dress" for 127.0.0.1 at 2023-04-10 20:56:55 +0530
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"dress"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 467)
+
+
+  
+NameError (undefined local variable or method `name' for #<ProductsController:0x000000001b9f90>):
+  
+app/controllers/products_controller.rb:18:in `show'
+Started GET "/products/dress" for 127.0.0.1 at 2023-04-10 20:57:58 +0530
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"dress"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "dress"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 830)
+
+
+Started GET "/products/" for 127.0.0.1 at 2023-04-10 20:58:33 +0530
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#index as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/products_controller.rb:14:in `index'
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 1924)
+
+
+Started GET "/products/Clothing%20and%20Accessories" for 127.0.0.1 at 2023-04-10 20:58:56 +0530
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"Clothing and Accessories"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "Clothing and Accessories"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:18:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 1089)
+
+
+  
+NameError (undefined local variable or method `product' for #<ProductsController:0x000000001c3860>):
+  
+app/controllers/products_controller.rb:26:in `show'
+Started GET "/products/Clothing%20and%20Accessories" for 127.0.0.1 at 2023-04-10 21:00:10 +0530
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"Clothing and Accessories"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "Clothing and Accessories"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:18:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 1135)
+
+
+  
+NameError (undefined local variable or method `category_name' for #<ProductsController:0x000000001c8658>):
+  
+app/controllers/products_controller.rb:27:in `show'
+Started GET "/products/Clothing%20and%20Accessories" for 127.0.0.1 at 2023-04-10 21:00:53 +0530
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#show as */*
+  Parameters: {"product"=>{"url"=>"https://www.flipkart.com/killer-slim-men-black-jeans/p/itm2403488411fec?pid=JEAGMGUBBER48VTC"}, "name"=>"Clothing and Accessories"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "Clothing and Accessories"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:18:in `show'
+  [1m[36mProduct Pluck (0.3ms)[0m  [1m[34mSELECT "products"."url" FROM "products" INNER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE "categories"."name" = ?[0m  [["name", "Clothing and Accessories"]]
+  ↳ app/controllers/products_controller.rb:27:in `show'
+Completed 200 OK in 24ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 2076)
+
+
+Started GET "/products" for 127.0.0.1 at 2023-04-10 21:02:22 +0530
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:10:in `<class:ProductsController>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `<class:ProductsController>'
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14:in `index'
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 2592)
+
+
+Started OPTIONS "/products" for 127.0.0.1 at 2023-04-10 21:02:41 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/products"):
+  
+Started GET "/products" for 127.0.0.1 at 2023-04-10 21:05:07 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14:in `index'
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 2437)
+
+
